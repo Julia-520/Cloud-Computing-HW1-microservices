@@ -1,6 +1,4 @@
-# Cloud-Computing-HW1-microservices
-a web application to find the weather of a given city
-
+# Microservices Example
 
 This repository contains two microservices and a client script to demonstrate how to build and call microservices using Flask, Docker, and Python.
 
@@ -16,19 +14,15 @@ The two microservices are defined in `app.py`:
 
 To run the microservices, you need to have Docker installed. Then, follow these steps:
 
-1. Build the Docker image using the Dockerfile:
+1. create docker network
+2. Build the Docker image using the Dockerfile:
+3. Run the Docker image.
 
-    ```
-    docker build -t microservice_city2zip .
-    docker build -t microservice_zip2weather .
-    ```
+you can run the following commands:
 
-2. Run the Docker container:
-
-    ```
-    docker run -d -p 8000:5000 microservice_city2zip
-    docker run -d -p 8001:5000 microservice_zip2weather
-    ```
+```bash
+bash create_network_container.sh
+```
 
 ## Running the Client
 
@@ -37,6 +31,14 @@ To run the client, you need to have Python 3 and the `requests` library installe
 
 ## Running the Integration
 
-To run the integration, you need to have Python 3 and the `requests` library installed. Then, run the following command:
 
-    python3 integration.py
+    python3 get_weather.py
+
+##Output
+
+    The process of creating the docker network and the docker containers:
+    ![Alt image5](./Output/build1.png)
+    ![Alt image6](./Output/build2.png)
+
+    the results of calling the get_weather.py:
+    ![Alt image7](./Output/result.png)
