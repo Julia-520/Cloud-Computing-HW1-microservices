@@ -36,9 +36,10 @@ To run the client, you need to have Python 3 and the `requests` library installe
 
 ##Output
 
+
     The process of creating the docker network and the docker containers:
-    ![Alt image5](./Output/build1.png)
-    ![Alt image6](./Output/build2.png)
+    ![Alt img1](./outputs/build1.png)
+    ![Alt imag2](./outputs/build2.png)
 
     the results of calling the get_weather.py:
-    ![Alt image7](./Output/result.png)
+    ![Alt img3](./outputs/result.png)
